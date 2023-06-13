@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
-import "../interfaces/IUniswapV2Router.sol";
-import "../interfaces/IERC20.sol";
-import "../interfaces/IFactory.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import {IUniswapV2Router} from "../interfaces/IUniswapV2Router.sol";
+import {IERC20} from "../interfaces/IERC20.sol";
+import {IFactory.sol} from "../interfaces/IFactory.sol";
 
 contract Factory is IFactory, Ownable {
     IUniswapV2Router public router;
